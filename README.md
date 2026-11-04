@@ -1,17 +1,23 @@
-# slot_machine_domracheva
+# Лабораторная работа №9. Flutter: StatefulWidget и управление состоянием
+**ФИ: Домрачевой Полины**
 
-A new Flutter project.
+**Группа: ИСП-241**
 
-## Getting Started
+**Дата сдачи: 04.11.26**
 
-This project is a starting point for a Flutter application.
+## Что изучила
+- Как работает `StatefulWidget` изнутри: зачем нужен отдельный класс `State` и как через `setState()` обновлять экран (монеты, картинки, сообщения).
+- Блокировка UI во время асинхронных операций: Изучено, как временно отключать интерактивные элементы (кнопки), передавая null в их обработчик onPressed на время выполнения анимации или загрузки.
+- Создание плавных анимаций интерфейса с помощью `AnimatedOpacity` и `AnimatedSwitcher`.
+- Игровая асинхронность: с помощью `Future.delayed` и `Future.wait` сделали так, чтобы три барабана крутились вместе, но останавливались по очереди с разной скоростью.
 
-A few resources to get you started if this is your first Flutter project:
+## Скриншот финального приложения
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+![Слот-машина](img/step4_domracheva.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Инструкция по запуску
+
+1. git clone https://github.com/chipollina/Flutter_Lab9.git
+2. cd Flutter_Lab9
+3. flutter pub get
+4. flutter run -d chrome
